@@ -1,43 +1,51 @@
 package com.agm.examen.junio;
 
 
-class Byke {  
+class Byke implements Vehicle {  
   int speed;
   int gear;
     
+  @Override
   public void changeGear(int newGear){     
       gear = newGear;
   }
     
   
+  @Override
   public void speedUp(int increment){
       speed = speed + increment;
   }
     
+  @Override
   public void applyBrakes(int decrement){     
       speed = speed - decrement;
   }
     
+  @Override
   public int getSpeed() {
     return speed;
   }
 
 
+  @Override
   public void setSpeed(int speed) {
     this.speed = speed;
   }
 
 
+  @Override
   public int getGear() {
     return gear;
   }
 
 
+  @Override
   public void setGear(int gear) {
     this.gear = gear;
   }
 
 
+  @Override
   public void printStates() {
       System.out.println("speed: " + speed
           + " gear: " + gear);
