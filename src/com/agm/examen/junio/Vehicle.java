@@ -1,6 +1,10 @@
 package com.agm.examen.junio;
 
-
+/**
+ * Interfaz que simula el comportamineto de un vehiculo
+ * @author Adrian
+ *
+ */
 
 interface Vehicle {
 

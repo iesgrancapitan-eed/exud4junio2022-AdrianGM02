@@ -1,48 +1,93 @@
 package com.agm.examen.junio;
 
+/**
+ * Simula el comportamiento de una bicicleta
+ * @author Adrian Gonzalez Martinez
+ *
+ */
 
 class Byke implements Vehicle {  
   int speed;
   int gear;
+  
+  /**
+   * Cambia el Gear 
+   * @param int newGear
+   */
     
   @Override
   public void changeGear(int newGear){     
       gear = newGear;
   }
+  
+  /**
+   * Incrementa la velocidad 
+   * @param int increment
+   */
     
   
   @Override
   public void speedUp(int increment){
       speed = speed + increment;
   }
+  
+  /**
+   * Disminuye la velocidad 
+   * @param int decrement
+   */
     
   @Override
   public void applyBrakes(int decrement){     
       speed = speed - decrement;
   }
+  
+  /**
+   * Se consigue la velocidad
+   * @return speed
+   */
     
   @Override
   public int getSpeed() {
     return speed;
   }
+  
+  /**
+   * Cambias la velocidad
+   * @param int speed
+   */
 
 
   @Override
   public void setSpeed(int speed) {
     this.speed = speed;
   }
+  
+  /**
+   * Se consigue el gear
+   * @return gear
+   */
 
 
   @Override
   public int getGear() {
     return gear;
   }
+  
+  /**
+   * Cambia el gear 
+   * @param int increment
+   */
 
 
   @Override
   public void setGear(int gear) {
     this.gear = gear;
   }
+  
+  /**
+   * Devuelve una frase con la velocidad y el gear
+   * 
+   */
 
 
   @Override
@@ -50,6 +95,12 @@ class Byke implements Vehicle {
       System.out.println("speed: " + speed
           + " gear: " + gear);
   }
+  
+  
+  /**
+   * Incrementa la velocidad 
+   * @return "Bicycle [speed=" + speed + ", gear=" + gear + "]"
+   */
 
 
 @Override
